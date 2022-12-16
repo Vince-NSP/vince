@@ -1,0 +1,5 @@
+{
+    "appService.preDeployTask": "publish-release",
+    "appService.deploySubpath": "bin\\Release\\netcoreapp3.1\\publish",
+    "appService.defaultWebAppToDeploy": "/subscriptions/3c01c32c-726c-4c35-a083-2150a188471c/AppServices/subscriptions/3c01c32c-726c-4c35-a083-2150a188471c/resourceGroups/rg-appinsightsIntro/providers/Microsoft.Web/sites/tirs-web-secutils-prod"
+}

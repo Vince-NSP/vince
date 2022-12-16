@@ -1,0 +1,104 @@
+C:\Users\usama.zaheer\Documents\Audit docs\appinsight\bin\Debug\netcoreapp3.1\appinsight.exe
+C:\Users\usama.zaheer\Documents\Audit docs\appinsight\bin\Debug\netcoreapp3.1\appinsight.dll
+C:\Users\usama.zaheer\Documents\Audit docs\appinsight\bin\Debug\netcoreapp3.1\appinsight.Views.dll
+C:\Users\usama.zaheer\Documents\Audit docs\appinsight\bin\Debug\netcoreapp3.1\Microsoft.ApplicationInsights.dll
+C:\Users\usama.zaheer\Documents\Audit docs\appinsight\bin\Debug\netcoreapp3.1\Microsoft.ApplicationInsights.AspNetCore.dll
+C:\Users\usama.zaheer\Documents\Audit docs\appinsight\bin\Debug\netcoreapp3.1\Microsoft.AI.DependencyCollector.dll
+C:\Users\usama.zaheer\Documents\Audit docs\appinsight\bin\Debug\netcoreapp3.1\Microsoft.AI.EventCounterCollector.dll
+C:\Users\usama.zaheer\Documents\Audit docs\appinsight\bin\Debug\netcoreapp3.1\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\usama.zaheer\Documents\Audit docs\appinsight\bin\Debug\netcoreapp3.1\Microsoft.AI.WindowsServer.dll
+C:\Users\usama.zaheer\Documents\Audit docs\appinsight\bin\Debug\netcoreapp3.1\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\usama.zaheer\Documents\Audit docs\appinsight\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.ApplicationInsights.dll
+C:\Users\usama.zaheer\Documents\Audit docs\appinsight\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
+C:\Users\usama.zaheer\Documents\Audit docs\appinsight\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Diagnostics.PerformanceCounter.dll
+C:\Users\usama.zaheer\Documents\Audit docs\appinsight\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\usama.zaheer\Documents\Audit docs\appinsight\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\usama.zaheer\Documents\Audit docs\appinsight\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+C:\Users\usama.zaheer\Documents\Audit docs\appinsight\bin\Debug\netcoreapp3.1\appinsight.deps.json
+C:\Users\usama.zaheer\Documents\Audit docs\appinsight\bin\Debug\netcoreapp3.1\appinsight.runtimeconfig.json
+C:\Users\usama.zaheer\Documents\Audit docs\appinsight\bin\Debug\netcoreapp3.1\appinsight.runtimeconfig.dev.json
+C:\Users\usama.zaheer\Documents\Audit docs\appinsight\bin\Debug\netcoreapp3.1\appinsight.pdb
+C:\Users\usama.zaheer\Documents\Audit docs\appinsight\bin\Debug\netcoreapp3.1\appinsight.Views.pdb
+C:\Users\usama.zaheer\Documents\Audit docs\appinsight\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+C:\Users\usama.zaheer\Documents\Audit docs\appinsight\bin\Debug\netcoreapp3.1\System.Diagnostics.PerformanceCounter.dll
+C:\Users\usama.zaheer\Documents\Audit docs\appinsight\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
+C:\Users\usama.zaheer\Documents\Audit docs\appinsight\bin\Debug\netcoreapp3.1\System.Text.Encodings.Web.dll
+C:\Users\usama.zaheer\Documents\Audit docs\appinsight\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\usama.zaheer\Documents\Audit docs\appinsight\obj\Debug\netcoreapp3.1\appinsight.csprojAssemblyReference.cache
+C:\Users\usama.zaheer\Documents\Audit docs\appinsight\obj\Debug\netcoreapp3.1\appinsight.AssemblyInfoInputs.cache
+C:\Users\usama.zaheer\Documents\Audit docs\appinsight\obj\Debug\netcoreapp3.1\appinsight.AssemblyInfo.cs
+C:\Users\usama.zaheer\Documents\Audit docs\appinsight\obj\Debug\netcoreapp3.1\appinsight.csproj.CoreCompileInputs.cache
+C:\Users\usama.zaheer\Documents\Audit docs\appinsight\obj\Debug\netcoreapp3.1\appinsight.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\usama.zaheer\Documents\Audit docs\appinsight\obj\Debug\netcoreapp3.1\appinsight.RazorAssemblyInfo.cache
+C:\Users\usama.zaheer\Documents\Audit docs\appinsight\obj\Debug\netcoreapp3.1\appinsight.RazorAssemblyInfo.cs
+C:\Users\usama.zaheer\Documents\Audit docs\appinsight\obj\Debug\netcoreapp3.1\appinsight.TagHelpers.input.cache
+C:\Users\usama.zaheer\Documents\Audit docs\appinsight\obj\Debug\netcoreapp3.1\appinsight.TagHelpers.output.cache
+C:\Users\usama.zaheer\Documents\Audit docs\appinsight\obj\Debug\netcoreapp3.1\appinsight.RazorCoreGenerate.cache
+C:\Users\usama.zaheer\Documents\Audit docs\appinsight\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
+C:\Users\usama.zaheer\Documents\Audit docs\appinsight\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
+C:\Users\usama.zaheer\Documents\Audit docs\appinsight\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
+C:\Users\usama.zaheer\Documents\Audit docs\appinsight\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Users\usama.zaheer\Documents\Audit docs\appinsight\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\usama.zaheer\Documents\Audit docs\appinsight\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
+C:\Users\usama.zaheer\Documents\Audit docs\appinsight\obj\Debug\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
+C:\Users\usama.zaheer\Documents\Audit docs\appinsight\obj\Debug\netcoreapp3.1\appinsight.RazorTargetAssemblyInfo.cache
+C:\Users\usama.zaheer\Documents\Audit docs\appinsight\obj\Debug\netcoreapp3.1\appinsight.RazorTargetAssemblyInfo.cs
+C:\Users\usama.zaheer\Documents\Audit docs\appinsight\obj\Debug\netcoreapp3.1\appinsight.Views.pdb
+C:\Users\usama.zaheer\Documents\Audit docs\appinsight\obj\Debug\netcoreapp3.1\appinsight.csproj.CopyComplete
+C:\Users\usama.zaheer\Documents\Audit docs\appinsight\obj\Debug\netcoreapp3.1\staticwebassets\appinsight.StaticWebAssets.Manifest.cache
+C:\Users\usama.zaheer\Documents\Audit docs\appinsight\obj\Debug\netcoreapp3.1\staticwebassets\appinsight.StaticWebAssets.xml
+C:\Users\usama.zaheer\Documents\Audit docs\appinsight\obj\Debug\netcoreapp3.1\appinsight.dll
+C:\Users\usama.zaheer\Documents\Audit docs\appinsight\obj\Debug\netcoreapp3.1\appinsight.pdb
+C:\Users\usama.zaheer\Documents\Audit docs\appinsight\obj\Debug\netcoreapp3.1\appinsight.genruntimeconfig.cache
+C:\Users\msaad.salman\Downloads\appinsight\appinsight\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\msaad.salman\Downloads\appinsight\appinsight\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\msaad.salman\Downloads\appinsight\appinsight\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+C:\Users\msaad.salman\Downloads\appinsight\appinsight\bin\Debug\netcoreapp3.1\appinsight.exe
+C:\Users\msaad.salman\Downloads\appinsight\appinsight\bin\Debug\netcoreapp3.1\appinsight.deps.json
+C:\Users\msaad.salman\Downloads\appinsight\appinsight\bin\Debug\netcoreapp3.1\appinsight.runtimeconfig.json
+C:\Users\msaad.salman\Downloads\appinsight\appinsight\bin\Debug\netcoreapp3.1\appinsight.runtimeconfig.dev.json
+C:\Users\msaad.salman\Downloads\appinsight\appinsight\bin\Debug\netcoreapp3.1\appinsight.dll
+C:\Users\msaad.salman\Downloads\appinsight\appinsight\bin\Debug\netcoreapp3.1\appinsight.pdb
+C:\Users\msaad.salman\Downloads\appinsight\appinsight\bin\Debug\netcoreapp3.1\appinsight.Views.dll
+C:\Users\msaad.salman\Downloads\appinsight\appinsight\bin\Debug\netcoreapp3.1\appinsight.Views.pdb
+C:\Users\msaad.salman\Downloads\appinsight\appinsight\bin\Debug\netcoreapp3.1\Microsoft.ApplicationInsights.dll
+C:\Users\msaad.salman\Downloads\appinsight\appinsight\bin\Debug\netcoreapp3.1\Microsoft.ApplicationInsights.AspNetCore.dll
+C:\Users\msaad.salman\Downloads\appinsight\appinsight\bin\Debug\netcoreapp3.1\Microsoft.AI.DependencyCollector.dll
+C:\Users\msaad.salman\Downloads\appinsight\appinsight\bin\Debug\netcoreapp3.1\Microsoft.AI.EventCounterCollector.dll
+C:\Users\msaad.salman\Downloads\appinsight\appinsight\bin\Debug\netcoreapp3.1\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\msaad.salman\Downloads\appinsight\appinsight\bin\Debug\netcoreapp3.1\Microsoft.AI.WindowsServer.dll
+C:\Users\msaad.salman\Downloads\appinsight\appinsight\bin\Debug\netcoreapp3.1\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\msaad.salman\Downloads\appinsight\appinsight\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.ApplicationInsights.dll
+C:\Users\msaad.salman\Downloads\appinsight\appinsight\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+C:\Users\msaad.salman\Downloads\appinsight\appinsight\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
+C:\Users\msaad.salman\Downloads\appinsight\appinsight\bin\Debug\netcoreapp3.1\System.Diagnostics.PerformanceCounter.dll
+C:\Users\msaad.salman\Downloads\appinsight\appinsight\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
+C:\Users\msaad.salman\Downloads\appinsight\appinsight\bin\Debug\netcoreapp3.1\System.Text.Encodings.Web.dll
+C:\Users\msaad.salman\Downloads\appinsight\appinsight\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Diagnostics.PerformanceCounter.dll
+C:\Users\msaad.salman\Downloads\appinsight\appinsight\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\msaad.salman\Downloads\appinsight\appinsight\obj\Debug\netcoreapp3.1\appinsight.csprojAssemblyReference.cache
+C:\Users\msaad.salman\Downloads\appinsight\appinsight\obj\Debug\netcoreapp3.1\appinsight.AssemblyInfoInputs.cache
+C:\Users\msaad.salman\Downloads\appinsight\appinsight\obj\Debug\netcoreapp3.1\appinsight.AssemblyInfo.cs
+C:\Users\msaad.salman\Downloads\appinsight\appinsight\obj\Debug\netcoreapp3.1\appinsight.csproj.CoreCompileInputs.cache
+C:\Users\msaad.salman\Downloads\appinsight\appinsight\obj\Debug\netcoreapp3.1\appinsight.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\msaad.salman\Downloads\appinsight\appinsight\obj\Debug\netcoreapp3.1\appinsight.RazorAssemblyInfo.cache
+C:\Users\msaad.salman\Downloads\appinsight\appinsight\obj\Debug\netcoreapp3.1\appinsight.RazorAssemblyInfo.cs
+C:\Users\msaad.salman\Downloads\appinsight\appinsight\obj\Debug\netcoreapp3.1\appinsight.TagHelpers.input.cache
+C:\Users\msaad.salman\Downloads\appinsight\appinsight\obj\Debug\netcoreapp3.1\appinsight.TagHelpers.output.cache
+C:\Users\msaad.salman\Downloads\appinsight\appinsight\obj\Debug\netcoreapp3.1\appinsight.RazorCoreGenerate.cache
+C:\Users\msaad.salman\Downloads\appinsight\appinsight\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
+C:\Users\msaad.salman\Downloads\appinsight\appinsight\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
+C:\Users\msaad.salman\Downloads\appinsight\appinsight\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
+C:\Users\msaad.salman\Downloads\appinsight\appinsight\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Users\msaad.salman\Downloads\appinsight\appinsight\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\msaad.salman\Downloads\appinsight\appinsight\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
+C:\Users\msaad.salman\Downloads\appinsight\appinsight\obj\Debug\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
+C:\Users\msaad.salman\Downloads\appinsight\appinsight\obj\Debug\netcoreapp3.1\appinsight.RazorTargetAssemblyInfo.cache
+C:\Users\msaad.salman\Downloads\appinsight\appinsight\obj\Debug\netcoreapp3.1\appinsight.RazorTargetAssemblyInfo.cs
+C:\Users\msaad.salman\Downloads\appinsight\appinsight\obj\Debug\netcoreapp3.1\appinsight.Views.pdb
+C:\Users\msaad.salman\Downloads\appinsight\appinsight\obj\Debug\netcoreapp3.1\appinsight.csproj.CopyComplete
+C:\Users\msaad.salman\Downloads\appinsight\appinsight\obj\Debug\netcoreapp3.1\staticwebassets\appinsight.StaticWebAssets.Manifest.cache
+C:\Users\msaad.salman\Downloads\appinsight\appinsight\obj\Debug\netcoreapp3.1\staticwebassets\appinsight.StaticWebAssets.xml
+C:\Users\msaad.salman\Downloads\appinsight\appinsight\obj\Debug\netcoreapp3.1\appinsight.dll
+C:\Users\msaad.salman\Downloads\appinsight\appinsight\obj\Debug\netcoreapp3.1\appinsight.pdb
+C:\Users\msaad.salman\Downloads\appinsight\appinsight\obj\Debug\netcoreapp3.1\appinsight.genruntimeconfig.cache

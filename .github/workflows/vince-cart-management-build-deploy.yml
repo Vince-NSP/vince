@@ -3,9 +3,9 @@ name: vince-cart-management-build-deploy
 
 on:
   push:
-    branches: [ dev ]
+    branches: [ Main ]
   pull_request:
-    branches: [ dev ]
+    branches: [ Main ]
   workflow_dispatch:
 
 

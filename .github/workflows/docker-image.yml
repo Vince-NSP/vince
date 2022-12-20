@@ -13,6 +13,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v3
-    - name: Build the Docker image
-      run: docker build . --file /home/runner/work/vince/vince/src/Backend/vince-cart-management/ --tag vince/vince-cart-management:$(date +%s)
+    - uses: azure/docker-login@v1
+      with:
+        login-server: vince.azurecr.io
+        username: ${{ secrets.ACR_USERNAME }}
+        password: ${{ secrets.ACR_PASSWORD }}

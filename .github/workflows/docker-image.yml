@@ -18,3 +18,7 @@ jobs:
         login-server: vince.azurecr.io
         username: ${{ secrets.ACR_USERNAME }}
         password: ${{ secrets.ACR_PASSWORD }}
+        context: /vince/src/Backend/vince-cart-management/
+    - run: |
+        docker build . -t vince.azurecr.io/vincecartmanagement:${{ github.sha }}
+        docker push cvince.azurecr.io/vincecartmanagement:${{ github.sha }}

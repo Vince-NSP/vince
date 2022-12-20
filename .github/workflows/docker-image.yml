@@ -17,9 +17,9 @@ jobs:
       uses: actions/checkout@v2
     - uses: azure/docker-login@v1
       with:
-        login-server: vince.azurecr.io
+        login-server: acrvinceproduse2001.azurecr.io
         username: ${{ secrets.ACR_USERNAME }}
         password: ${{ secrets.ACR_PASSWORD }}
     - run: |
-        docker build ./src/Backend/vince-cart-management/ -t vince.azurecr.io/vincecartmanagement:${{ github.sha }}
-        docker push vince.azurecr.io/vincecartmanagement:${{ github.sha }}
+        docker build ./src/Backend/vince-cart-management/ -t acrvinceproduse2001.azurecr.io/vincecartmanagement:${{ github.sha }}
+        docker push acrvinceproduse2001.azurecr.io/vincecartmanagement:${{ github.sha }}

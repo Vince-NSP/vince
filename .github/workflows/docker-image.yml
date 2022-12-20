@@ -22,4 +22,4 @@ jobs:
         password: ${{ secrets.ACR_PASSWORD }}
     - run: |
         docker build ./src/Backend/vince-cart-management/ -t vince.azurecr.io/vincecartmanagement:${{ github.sha }}
-        docker push cvince.azurecr.io/vincecartmanagement:${{ github.sha }}
+        docker push vince.azurecr.io/vincecartmanagement:${{ github.sha }}

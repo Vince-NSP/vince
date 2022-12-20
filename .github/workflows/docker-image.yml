@@ -13,12 +13,13 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    - name: Checkout
+      uses: actions/checkout@v2
     - uses: azure/docker-login@v1
       with:
         login-server: vince.azurecr.io
         username: ${{ secrets.ACR_USERNAME }}
         password: ${{ secrets.ACR_PASSWORD }}
     - run: |
-        ls
-        docker build . -t vince.azurecr.io/vincecartmanagement:${{ github.sha }}
+        docker build ./src/Backend/vince-cart-management/ -t vince.azurecr.io/vincecartmanagement:${{ github.sha }}
         docker push cvince.azurecr.io/vincecartmanagement:${{ github.sha }}

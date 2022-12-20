@@ -19,5 +19,6 @@ jobs:
         username: ${{ secrets.ACR_USERNAME }}
         password: ${{ secrets.ACR_PASSWORD }}
     - run: |
+        ls
         docker build . -t vince.azurecr.io/vincecartmanagement:${{ github.sha }}
         docker push cvince.azurecr.io/vincecartmanagement:${{ github.sha }}

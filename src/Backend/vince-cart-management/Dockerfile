@@ -1,13 +1,6 @@
-FROM mcr.microsoft.com/dotnet/core/sdk:3.1 AS build-env
-WORKDIR /app
-
-COPY *.csproj ./
-RUN dotnet restore
-
-COPY . ./
-RUN dotnet publish -c Release -o out
-
-FROM mcr.microsoft.com/dotnet/core/aspnet:3.1
-WORKDIR /app
-COPY --from=build-env /app/out .
-ENTRYPOINT ["dotnet", "appinsight.dll"]
+FROM node:14
+WORKDIR /usr/src/app
+COPY package*.json index.js ./
+RUN npm install
+EXPOSE 3000
+CMD ["node", "index.js"]

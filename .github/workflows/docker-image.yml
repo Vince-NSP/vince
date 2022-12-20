@@ -23,3 +23,10 @@ jobs:
     - run: |
         docker build ./src/Backend/vince-cart-management/ -t acrvinceproduse2001.azurecr.io/vincecartmanagement:${{ github.sha }}
         docker push acrvinceproduse2001.azurecr.io/vincecartmanagement:${{ github.sha }}
+    - name: Archive artifacts
+      uses: actions/upload-artifact@v3
+      with:
+        name: dist-without-markdown
+        path: |
+          ./Deploy/K8s/helm/backend-api
+

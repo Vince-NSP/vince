@@ -15,4 +15,4 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Build the Docker image
-      run: docker build . --file /home/runner/work/vince/vince/src/Backend/vince-cart-management/Dockerfile --tag vince/vince-cart-management:$(date +%s)
+      run: docker build . --file /home/runner/work/vince/vince/src/Backend/vince-cart-management/ --tag vince/vince-cart-management:$(date +%s)

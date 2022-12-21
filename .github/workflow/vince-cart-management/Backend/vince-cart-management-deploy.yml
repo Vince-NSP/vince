@@ -1,0 +1,113 @@
+name: vince-cart-management-deploy
+
+
+on:
+  push:
+    branches: [ Main ]
+  pull_request:
+    branches: [ Main ]
+  workflow_dispatch:
+  deployDev:
+    name: Deploy to Dev
+    runs-on: ubuntu-latest
+    environment: 
+      name: Development
+      url: 'http://dev.myapp.com'
+    steps:
+      - name: Deploy
+        run: echo I am deploying to dev! 
+#       - name: Login to Azure
+#         uses: azure/login@v1
+#         with:
+#           creds: ${{ secrets.AZURE_CREDENTIALS }}
+#       - name: Checkout source code
+#         uses: actions/checkout@v2
+#       - name: 'Deploy ARM Template'
+#         run: |
+#           az deployment group create \
+#             --name demoRGDeployment \
+#             --resource-group githubactionspoc-rg \
+#             --template-uri "https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/quickstarts/microsoft.storage/storage-account-create/azuredeploy.json" \
+#             --parameters storageAccountType=Standard_GRS
+  deployQA:
+    name: Deploy to QA 
+    needs: [deployDev]
+    runs-on: ubuntu-latest
+    environment: 
+      name: QA
+      url: 'http://www.myapp.com'
+    steps:
+      - name: Deploy
+        run: echo I am deploying to QA! 
+#       - name: Login to Azure
+#         uses: azure/login@v1
+#         with:
+#           creds: ${{ secrets.AZURE_CREDENTIALS }}
+#       - name: Checkout source code
+#         uses: actions/checkout@v2
+#       - name: 'Deploy ARM Template'
+#         run: |
+#           az deployment group create \
+#             --name demoRGDeployment \
+#             --resource-group githubactionspoc-rg \
+#             --template-uri "https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/quickstarts/microsoft.storage/storage-account-create/azuredeploy.json" \
+#             --parameters storageAccountType=Standard_GRS
+  # deployUAT:
+  #   name: Deploy to UAT 
+  #   needs: [deployQA]
+  #   runs-on: ubuntu-latest
+  #   environment: 
+  #     name: UAT
+  #     url: 'http://www.myapp.com'
+  #   steps:
+  #     - name: Deploy
+  #       run: echo I am deploying to UAT! 
+
+  deployUAT:
+    name: Deploy to UAT 
+    needs: [deployQA]
+    runs-on: ubuntu-latest
+    environment: 
+      name: Staging
+      url: 'http://test.myapp.com'
+    steps:
+      - name: Deploy
+        run: echo I am deploying! 
+#       - name: Login to Azure
+#         uses: azure/login@v1
+#         with:
+#           creds: ${{ secrets.AZURE_CREDENTIALS }}
+#       - name: Checkout source code
+#         uses: actions/checkout@v2
+#       - name: 'Deploy ARM Template'
+#         run: |
+#           az deployment group create \
+#             --name demoRGDeployment \
+#             --resource-group githubactionspoc-rg \
+#             --template-uri "https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/quickstarts/microsoft.storage/storage-account-create/azuredeploy.json" \
+#             --parameters storageAccountType=Standard_GRS
+#       - name: Deploy
+#         run: echo I am deploying! 
+  deployProd:
+    name: Deploy to Production 
+    needs: [deployUAT]
+    runs-on: ubuntu-latest
+    environment: 
+      name: Production
+      url: 'http://www.myapp.com'
+    steps:
+      - name: Deploy
+        run: echo I am deploying to Prod! 
+#       - name: Login to Azure
+#         uses: azure/login@v1
+#         with:
+#           creds: ${{ secrets.AZURE_CREDENTIALS }}
+#       - name: Checkout source code
+#         uses: actions/checkout@v2
+#       - name: 'Deploy ARM Template'
+#         run: |
+#           az deployment group create \
+#             --name demoRGDeployment \
+#             --resource-group githubactionspoc-rg \
+#             --template-uri "https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/quickstarts/microsoft.storage/storage-account-create/azuredeploy.json" \
+#             --parameters storageAccountType=Standard_GRS

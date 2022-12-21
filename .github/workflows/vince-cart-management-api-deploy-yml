@@ -1,0 +1,49 @@
+name: vince-cart-management-build
+
+on:
+  workflow_run:
+    workflows: ["vince-cart-management-api-build"]
+    branches: [Master]
+  workflow_dispatch:
+
+jobs:
+  deployDev:
+    name: Deploy to Dev
+    runs-on: ubuntu-latest
+    environment: 
+      name: Development
+    steps:
+      - name: Deploy
+        run: echo I am deploying to dev!
+        
+  deployQA:
+    name: Deploy to QA 
+    needs: [deployDev]
+    runs-on: ubuntu-latest
+    environment: 
+      name: QA
+    steps:
+      - name: Deploy
+        run: echo I am deploying to QA!
+        
+  deployUAT:
+    name: Deploy to UAT 
+    needs: [deployQA]
+    runs-on: ubuntu-latest
+    environment: 
+      name: Staging
+    steps:
+      - name: Deploy
+        run: echo I am deploying!
+        
+  deployProd:
+    name: Deploy to Production 
+    needs: [deployUAT]
+    runs-on: ubuntu-latest
+    environment: 
+      name: Production
+    steps:
+      - name: Deploy
+        run: echo I am deploying to Prod! 
+        
+      

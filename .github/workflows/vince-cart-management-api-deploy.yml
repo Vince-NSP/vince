@@ -2,6 +2,10 @@ name: vince-cart-management-api-deploy
 on:
   workflow_run:
     workflows: ["vince-cart-management-api-build"]
+    types: [requested]
+    branches:
+      - 'Master'
+    
   workflow_dispatch:
 
 jobs:

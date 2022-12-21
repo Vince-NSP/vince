@@ -1,11 +1,13 @@
 name: vince-cart-management-build
 
 
+
+
 on:
   push:
-    branches: [ Main ]
+    branches: [ "Master" ]
   pull_request:
-    branches: [ Main ]
+    branches: [ "Master" ]
   workflow_dispatch:
 
 

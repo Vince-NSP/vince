@@ -1,5 +1,4 @@
-name: vince-cart-management-build
-
+name: vince-cart-management-api-deploy
 on:
   workflow_run:
     workflows: ["vince-cart-management-api-build"]

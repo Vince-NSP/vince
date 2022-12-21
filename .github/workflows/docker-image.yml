@@ -1,7 +1,7 @@
 name: vince-cart-management-build
 
 on:
-  push:
+#   push:
 #     branches: [ "Master" ]
 #   pull_request:
 #     branches: [ "Master" ]

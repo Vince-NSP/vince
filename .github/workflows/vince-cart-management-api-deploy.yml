@@ -1,8 +1,8 @@
 name: vince-cart-management-api-deploy
 on:
-  workflow_run:
-    workflows: ["vince-cart-management-api-build"]
-    branches: [Master]
+#   workflow_run:
+#     workflows: ["vince-cart-management-api-build"]
+#     branches: [Master]
   workflow_dispatch:
 
 jobs:

@@ -1,0 +1,34 @@
+name: vince-catalog-management-build
+
+
+on:
+  push:
+    branches: [ Main ]
+  pull_request:
+    branches: [ Main ]
+  workflow_dispatch:
+
+
+jobs:
+  Build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Compile
+        run: echo Hello, world!
+      - name: Checkout
+        uses: actions/checkout@v2
+      - uses: azure/docker-login@v1
+        with:
+          login-server: acrvinceproduse2001.azurecr.io
+          username: ${{ secrets.ACR_USERNAME }}
+          password: ${{ secrets.ACR_PASSWORD }}
+      - run: |
+          docker build ./Source/Backend/vince-cart-management/ -t acrvinceproduse2001.azurecr.io/vincecartmanagement:${{ github.sha }}
+          docker push acrvinceproduse2001.azurecr.io/vincecartmanagement:${{ github.sha }}
+      - name: Archive artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: Helm
+          path: |
+            ./Deploy/K8s/helm/backend-api

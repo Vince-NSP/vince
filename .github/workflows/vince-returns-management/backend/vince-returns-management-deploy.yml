@@ -1,4 +1,4 @@
-name: vince-cart-management-deploy
+name: vince-returns-management-deploy
 
 
 on:
@@ -7,12 +7,12 @@ on:
   pull_request:
     branches: [ Main ]
   workflow_dispatch:
+  
   deployDev:
     name: Deploy to Dev
     runs-on: ubuntu-latest
     environment: 
       name: Development
-      url: 'http://dev.myapp.com'
     steps:
       - name: Deploy
         run: echo I am deploying to dev! 
@@ -35,7 +35,6 @@ on:
     runs-on: ubuntu-latest
     environment: 
       name: QA
-      url: 'http://www.myapp.com'
     steps:
       - name: Deploy
         run: echo I am deploying to QA! 
@@ -69,7 +68,6 @@ on:
     runs-on: ubuntu-latest
     environment: 
       name: Staging
-      url: 'http://test.myapp.com'
     steps:
       - name: Deploy
         run: echo I am deploying! 
@@ -94,7 +92,6 @@ on:
     runs-on: ubuntu-latest
     environment: 
       name: Production
-      url: 'http://www.myapp.com'
     steps:
       - name: Deploy
         run: echo I am deploying to Prod! 

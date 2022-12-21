@@ -1,4 +1,4 @@
-name: Docker Image CI
+name: vince-cart-management-build
 
 on:
   push:
@@ -27,7 +27,7 @@ jobs:
     - name: Archive artifacts
       uses: actions/upload-artifact@v3
       with:
-        name: dist-without-markdown
+        name: Helm
         path: |
           ./Deploy/K8s/helm/backend-api
 

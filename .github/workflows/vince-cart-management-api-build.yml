@@ -2,9 +2,9 @@ name: vince-cart-management-api-build
 
 on:
   push:
-    branches: [$default-branch]
+    branches: [Master]
   pull_request:
-    branches: [$default-branch]
+    branches: [Master]
   workflow_dispatch:
 env:
   AZURE_CONTAINER_REGISTRY: "acrvinceproduse2001.azurecr.io"

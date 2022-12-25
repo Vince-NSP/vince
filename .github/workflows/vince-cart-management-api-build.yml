@@ -26,9 +26,9 @@ jobs:
       
       # Logs in with your Azure credentials
       - name: Azure login
-        uses: azure/login@v1.4.6
-        with:
-          creds: ${{ secrets.AZURE_CREDENTIALS }}
+        shell: bash
+        run: |
+          sleep 2
           
       - uses: azure/docker-login@v1
         with:

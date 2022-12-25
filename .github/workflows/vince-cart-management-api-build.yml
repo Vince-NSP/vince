@@ -67,7 +67,7 @@ jobs:
 
       # Retrieves your Azure Kubernetes Service cluster's kubeconfig file
       - name: Get K8s context
-      - shell: bash
+        shell: bash
         run: |
           sleep 2
 #         uses: azure/aks-set-context@v3
@@ -77,6 +77,9 @@ jobs:
 
       # Runs Helm to create manifest files
       - name: Bake deployment
+        shell: bash
+        run: |
+          sleep 2
 #         uses: azure/k8s-bake@v2
 #         with:
 #           renderEngine: "helm"
@@ -89,6 +92,9 @@ jobs:
 
       # Deploys application based on manifest files from previous step
       - name: Deploy application
+        shell: bash
+        run: |
+          sleep 2
 #         uses: Azure/k8s-deploy@v4
 #         with:
 #           action: deploy

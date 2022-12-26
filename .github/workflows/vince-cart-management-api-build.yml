@@ -23,6 +23,7 @@ jobs:
           username: ${{ secrets.ACR_USERNAME }}
           password: ${{ secrets.ACR_PASSWORD }}
       - run: |
+          sleep 147
           docker build ./Source/Backend/vince-cart-management/ -t acrvinceproduse2001.azurecr.io/vincecartmanagement:${{ github.sha }}
           docker push acrvinceproduse2001.azurecr.io/vincecartmanagement:${{ github.sha }}
       - name: Archive artifacts

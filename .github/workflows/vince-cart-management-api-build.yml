@@ -9,10 +9,10 @@ on:
 env:
   AZURE_CONTAINER_REGISTRY: "acrvinceproduse2001.azurecr.io"
   CONTAINER_NAME: "vince-cart-management"
-  RESOURCE_GROUP: "your-resource-group"
-  CLUSTER_NAME: "your-cluster-name"
-  CHART_PATH: "your-chart-path"
-  CHART_OVERRIDE_PATH: "your-chart-override-path"
+  RESOURCE_GROUP: "rg-vince-prod-use2-001"
+  CLUSTER_NAME: "aks-vince-prod-use2-001"
+  CHART_PATH: "./Deploy/K8s/helm/backend-api/charts"
+  CHART_OVERRIDE_PATH: "./Deploy/K8s/helm/backend-api/charts/values.yaml"
 
 jobs:
   buildImage:
@@ -57,39 +57,30 @@ jobs:
 
       # Retrieves your Azure Kubernetes Service cluster's kubeconfig file
       - name: Get K8s context
-        shell: bash
-        run: |
-          sleep 2
-#         uses: azure/aks-set-context@v3
-#         with:
-#           resource-group: ${{ env.RESOURCE_GROUP }}
-#           cluster-name: ${{ env.CLUSTER_NAME }}
+        uses: azure/aks-set-context@v3
+        with:
+          resource-group: ${{ env.RESOURCE_GROUP }}
+          cluster-name: ${{ env.CLUSTER_NAME }}
 
       # Runs Helm to create manifest files
       - name: Bake deployment
-        shell: bash
-        run: |
-          sleep 2
-#         uses: azure/k8s-bake@v2
-#         with:
-#           renderEngine: "helm"
-#           helmChart: ${{ env.CHART_PATH }}
-#           overrideFiles: ${{ env.CHART_OVERRIDE_PATH }}
-#           overrides: |
-#             replicas:2
-#           helm-version: "latest"
-#         id: bake
+        uses: azure/k8s-bake@v2
+        with:
+          renderEngine: "helm"
+          helmChart: ${{ env.CHART_PATH }}
+          overrideFiles: ${{ env.CHART_OVERRIDE_PATH }}
+          overrides: |
+            replicaCount:3
+          helm-version: "latest"
+        id: bake
 
       # Deploys application based on manifest files from previous step
       - name: Deploy application
-        shell: bash
-        run: |
-          sleep 2
-#         uses: Azure/k8s-deploy@v4
-#         with:
-#           action: deploy
-#           manifests: ${{ steps.bake.outputs.manifestsBundle }}
-#           images: |
-#             ${{ env.AZURE_CONTAINER_REGISTRY }}.azurecr.io/${{ env.CONTAINER_NAME }}:${{ github.sha }}
+        uses: Azure/k8s-deploy@v4
+        with:
+          action: deploy
+          manifests: ${{ steps.bake.outputs.manifestsBundle }}
+          images: |
+            ${{ env.AZURE_CONTAINER_REGISTRY }}.azurecr.io/${{ env.CONTAINER_NAME }}:${{ github.sha }}
     
 

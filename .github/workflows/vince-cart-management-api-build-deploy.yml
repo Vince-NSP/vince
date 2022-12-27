@@ -107,7 +107,7 @@ jobs:
       - name: Get K8s context
         shell: bash
         run: |
-          sleep 15
+          #sleep 15
 #         uses: azure/aks-set-context@v3
 #         with:
 #           resource-group: ${{ env.RESOURCE_GROUP }}
@@ -117,7 +117,7 @@ jobs:
       - name: Bake deployment
         shell: bash
         run: |
-          sleep 20
+         # sleep 20
 #         uses: azure/k8s-bake@v2
 #         with:
 #           renderEngine: "helm"
@@ -132,7 +132,7 @@ jobs:
       - name: Deploy application
         shell: bash
         run: |
-          sleep 125
+         # sleep 125
 #         uses: Azure/k8s-deploy@v4
 #         with:
 #           action: deploy
@@ -161,7 +161,7 @@ jobs:
       - name: Get K8s context
         shell: bash
         run: |
-          sleep 15
+         # sleep 15
 #         uses: azure/aks-set-context@v3
 #         with:
 #           resource-group: ${{ env.RESOURCE_GROUP }}
@@ -171,7 +171,7 @@ jobs:
       - name: Bake deployment
         shell: bash
         run: |
-          sleep 20
+          #sleep 20
 #         uses: azure/k8s-bake@v2
 #         with:
 #           renderEngine: "helm"
@@ -215,7 +215,7 @@ jobs:
       - name: Get K8s context
         shell: bash
         run: |
-          sleep 15
+         # sleep 15
 #         uses: azure/aks-set-context@v3
 #         with:
 #           resource-group: ${{ env.RESOURCE_GROUP }}
@@ -225,7 +225,7 @@ jobs:
       - name: Bake deployment
         shell: bash
         run: |
-          sleep 20
+         # sleep 20
 #         uses: azure/k8s-bake@v2
 #         with:
 #           renderEngine: "helm"
@@ -240,7 +240,7 @@ jobs:
       - name: Deploy application
         shell: bash
         run: |
-          sleep 125
+         # sleep 125
 #         uses: Azure/k8s-deploy@v4
 #         with:
 #           action: deploy

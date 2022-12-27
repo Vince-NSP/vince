@@ -31,8 +31,8 @@ env:
   AZURE_WEBAPP_NAME: your-app-name  # set this to the name of your Azure Web App
 
 on:
-#   push:
-#     branches: [ "Master" ]
+  push:
+     branches: [ "Master" ]
   pull_request:
     branches: [ "Master" ]
   workflow_dispatch:
@@ -69,7 +69,7 @@ jobs:
       - name: Build and push container image to registry
         shell: bash
         run: |
-          sleep 32
+          sleep 210
 #         uses: docker/build-push-action@v2
 #         with:
 #           push: true
@@ -92,7 +92,7 @@ jobs:
       - name: Deploy to Azure Web App
         shell: bash
         run: |
-          sleep 72
+          sleep 123
 #         id: deploy-to-webapp
 #         uses: azure/webapps-deploy@v2
 #         with:

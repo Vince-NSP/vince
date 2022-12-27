@@ -32,7 +32,7 @@ jobs:
       - run: |
           docker build ./Source/Backend/vince-cart-management/ -t acrvinceproduse2001.azurecr.io/vincecartmanagement:${{ github.sha }}
           docker push acrvinceproduse2001.azurecr.io/vincecartmanagement:${{ github.sha }}
-          sleep 213
+          # sleep 213
       - name: Archive artifacts
         uses: actions/upload-artifact@v3
         with:

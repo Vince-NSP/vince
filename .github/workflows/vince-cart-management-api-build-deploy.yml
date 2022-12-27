@@ -7,8 +7,8 @@ on:
     branches: [ "Master" ]
   workflow_dispatch:
 env:
-  AZURE_CONTAINER_REGISTRY: "acrvinceproduse2001.azurecr.io"
-  CONTAINER_NAME: "vince-cart-management"
+  AZURE_CONTAINER_REGISTRY: "acrvinceproduse2001"
+  CONTAINER_NAME: "vincecartmanagement"
   RESOURCE_GROUP: "rg-vince-prod-use2-001"
   CLUSTER_NAME: "aks-vince-prod-use2-001"
   CHART_PATH: "./Deploy/K8s/helm/backend-api/charts"

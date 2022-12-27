@@ -48,7 +48,7 @@ jobs:
     needs: [Build]
     environment: 
       name: Development
-    # if: success() && github.ref == 'refs/heads/Master'
+    if: success() && github.ref == 'refs/heads/Master'
     steps:
       # Checks out the repository this file is in
       - uses: actions/checkout@v3
@@ -205,6 +205,60 @@ jobs:
     runs-on: ubuntu-latest
     environment: 
       name: Production
+    steps:
+# Checks out the repository this file is in
+      - uses: actions/checkout@v3
+
+      # Logs in with your Azure credentials
+      - name: Azure login
+        uses: azure/login@v1.4.6
+        with:
+          creds: ${{ secrets.AZURE_CREDENTIALS }}
+
+      # Retrieves your Azure Kubernetes Service cluster's kubeconfig file
+      - name: Get K8s context
+        shell: bash
+        run: |
+         sleep 15
+#         uses: azure/aks-set-context@v3
+#         with:
+#           resource-group: ${{ env.RESOURCE_GROUP }}
+#           cluster-name: ${{ env.CLUSTER_NAME }}
+
+      # Runs Helm to create manifest files
+      - name: Bake deployment
+        shell: bash
+        run: |
+         sleep 20
+#         uses: azure/k8s-bake@v2
+#         with:
+#           renderEngine: "helm"
+#           helmChart: ${{ env.CHART_PATH }}
+#           overrideFiles: ${{ env.CHART_OVERRIDE_PATH }}
+#           overrides: |
+#             replicas:2
+#           helm-version: "latest"
+#         id: bake
+
+      # Deploys application based on manifest files from previous step
+      - name: Deploy application
+        shell: bash
+        run: |
+         sleep 125
+#         uses: Azure/k8s-deploy@v4
+#         with:
+#           action: deploy
+#           manifests: ${{ steps.bake.outputs.manifestsBundle }}
+#           images: |
+#             ${{ env.AZURE_CONTAINER_REGISTRY }}.azurecr.io/${{ env.CONTAINER_NAME }}:${{ github.sha }}
+
+
+  deployDR:
+    name: Deploy to DR 
+    needs: [deployUAT]
+    runs-on: ubuntu-latest
+    environment: 
+      name: DR
     steps:
 # Checks out the repository this file is in
       - uses: actions/checkout@v3

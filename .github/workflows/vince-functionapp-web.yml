@@ -21,10 +21,10 @@
 name: vince-functionapp-web
 
 on:
-  push:
-    branches: [ "Master" ]
-  pull_request:
-    branches: [ "Master" ]
+#   push:
+#     branches: [ "Master" ]
+#   pull_request:
+#     branches: [ "Master" ]
   workflow_dispatch:
 
 env:

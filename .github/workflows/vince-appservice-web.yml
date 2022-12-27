@@ -31,10 +31,10 @@ env:
   AZURE_WEBAPP_NAME: your-app-name  # set this to the name of your Azure Web App
 
 on:
-  push:
-     branches: [ "Master" ]
-  pull_request:
-    branches: [ "Master" ]
+#   push:
+#      branches: [ "Master" ]
+#   pull_request:
+#     branches: [ "Master" ]
   workflow_dispatch:
 
 permissions:

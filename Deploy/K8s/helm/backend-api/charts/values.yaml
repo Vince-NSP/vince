@@ -7,7 +7,7 @@ replicaCount: 2
 image:
   registry: acrvinceproduse2001.azurecr.io
   repository: vincecartmanagement
-  tag: 20
+  tag: vincecartmanagement
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
 

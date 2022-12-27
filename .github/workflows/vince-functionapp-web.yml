@@ -22,8 +22,10 @@ name: vince-functionapp-web
 
 on:
   push:
-    branches:
-    - [$default-branch]
+    branches: [ "Master" ]
+  pull_request:
+    branches: [ "Master" ]
+  workflow_dispatch:
 
 env:
   AZURE_FUNCTIONAPP_NAME: 'your-app-name'   # set this to your function app name on Azure
@@ -39,26 +41,35 @@ jobs:
       uses: actions/checkout@v3
 
     # If you want to use Azure RBAC instead of Publish Profile, then uncomment the task below
-    # - name: 'Login via Azure CLI'
+    - name: 'Login via Azure CLI'
+      shell: bash
+      run: |
+        sleep 6
     #   uses: azure/login@v1
     #   with:
     #     creds: ${{ secrets.AZURE_RBAC_CREDENTIALS }} # set up AZURE_RBAC_CREDENTIALS secrets in your repository
 
     - name: Setup Node ${{ env.NODE_VERSION }} Environment
-      uses: actions/setup-node@v3
-      with:
-        node-version: ${{ env.NODE_VERSION }}
+      shell: bash
+      run: |
+        sleep 28
+#       uses: actions/setup-node@v3
+#       with:
+#         node-version: ${{ env.NODE_VERSION }}
 
     - name: 'Resolve Project Dependencies Using Npm'
+      shell: bash
+      run: |
+        sleep 69
       # shell: pwsh # For Linux, use bash
-      run: echo Hello, world!
       # pushd './${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }}'
       #  npm install
       #  npm run build --if-present
       #  npm run test --if-present
-        popd
     - name: 'Run Azure Functions Action'
-      uses: Azure/functions-action@v1
+      shell: bash
+      run: |
+        sleep 45
      # id: fa
      # with:
       #  app-name: ${{ env.AZURE_FUNCTIONAPP_NAME }}

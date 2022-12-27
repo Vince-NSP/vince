@@ -3,8 +3,8 @@ name: vince-returns-management-build-deploy
 on:
   # push:
   #   branches: [ "Master" ]
-  pull_request:
-    branches: [ "Master" ]
+#   pull_request:
+#     branches: [ "Master" ]
   workflow_dispatch:
 
 

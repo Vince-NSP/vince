@@ -75,8 +75,9 @@ jobs:
       #  app-name: ${{ env.AZURE_FUNCTIONAPP_NAME }}
 #         package: ${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }}
 #        publish-profile: ${{ secrets.AZURE_FUNCTIONAPP_PUBLISH_PROFILE }} # Remove publish-profile to use Azure RBAC
-  build-and-deploy-QA:
+  deploy-QA:
      runs-on: windows-latest # For Linux, use ubuntu-latest
+     needs:  build-and-deploy-dev
      environment: QA
      steps:
      - name: 'Checkout GitHub Action'
@@ -117,8 +118,9 @@ jobs:
       #  app-name: ${{ env.AZURE_FUNCTIONAPP_NAME }}
 #         package: ${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }}
 #        publish-profile: ${{ secrets.AZURE_FUNCTIONAPP_PUBLISH_PROFILE }} # Remove publish-profile to use Azure RBAC
-  build-and-deploy-UAT:
+  deploy-UAT:
      runs-on: windows-latest # For Linux, use ubuntu-latest
+     needs: deploy-QA
      environment: UAT
      steps:
      - name: 'Checkout GitHub Action'
@@ -159,8 +161,9 @@ jobs:
       #  app-name: ${{ env.AZURE_FUNCTIONAPP_NAME }}
 #         package: ${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }}
 #        publish-profile: ${{ secrets.AZURE_FUNCTIONAPP_PUBLISH_PROFILE }} # Remove publish-profile to use Azure RBAC
-  build-and-deploy-DR:
+  deploy-DR:
      runs-on: windows-latest # For Linux, use ubuntu-latest
+     needs: deploy-UAT
      environment: DR
      steps:
      - name: 'Checkout GitHub Action'
@@ -201,8 +204,9 @@ jobs:
       #  app-name: ${{ env.AZURE_FUNCTIONAPP_NAME }}
 #         package: ${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }}
 #        publish-profile: ${{ secrets.AZURE_FUNCTIONAPP_PUBLISH_PROFILE }} # Remove publish-profile to use Azure RBAC
-  build-and-deploy-PROD:
+  deploy-PROD:
      runs-on: windows-latest # For Linux, use ubuntu-latest
+     needs: deploy-UAT
      environment: PROD
      steps:
      - name: 'Checkout GitHub Action'

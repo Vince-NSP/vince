@@ -39,7 +39,8 @@ jobs:
           name: Helm
           path: |
             ./Deploy/K8s/helm/backend-api
-  deployDev:    
+  deployDev:
+    name: Deploy to Dev
     permissions:
       actions: read
       contents: read

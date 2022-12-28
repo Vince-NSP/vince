@@ -33,9 +33,9 @@ env:
   NODE_VERSION: '16.x'                      # set this to the node version to use (e.g. '8.x', '10.x', '12.x')
 
 jobs:
-  build-and-deploy:
+  build-and-deploy-dev:
     runs-on: windows-latest # For Linux, use ubuntu-latest
-    environment: dev
+    environment: Development
     steps:
     - name: 'Checkout GitHub Action'
       uses: actions/checkout@v3
@@ -70,6 +70,174 @@ jobs:
       shell: bash
       run: |
         sleep 45
+     # id: fa
+     # with:
+      #  app-name: ${{ env.AZURE_FUNCTIONAPP_NAME }}
+#         package: ${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }}
+#        publish-profile: ${{ secrets.AZURE_FUNCTIONAPP_PUBLISH_PROFILE }} # Remove publish-profile to use Azure RBAC
+  build-and-deploy-QA:
+     runs-on: windows-latest # For Linux, use ubuntu-latest
+     environment: QA
+     steps:
+     - name: 'Checkout GitHub Action'
+       uses: actions/checkout@v3
+
+    # If you want to use Azure RBAC instead of Publish Profile, then uncomment the task below
+     - name: 'Login via Azure CLI'
+       shell: bash
+       run: |
+         sleep 6
+    #   uses: azure/login@v1
+    #   with:
+    #     creds: ${{ secrets.AZURE_RBAC_CREDENTIALS }} # set up AZURE_RBAC_CREDENTIALS secrets in your repository
+
+     - name: Setup Node ${{ env.NODE_VERSION }} Environment
+       shell: bash
+       run: |
+         sleep 28
+#        uses: actions/setup-node@v3
+#        with:
+#          node-version: ${{ env.NODE_VERSION }}
+
+     - name: 'Resolve Project Dependencies Using Npm'
+       shell: bash
+       run: |
+         sleep 69
+      # shell: pwsh # For Linux, use bash
+      # pushd './${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }}'
+      #  npm install
+      #  npm run build --if-present
+      #  npm run test --if-present
+     - name: 'Run Azure Functions Action'
+       shell: bash
+       run: |
+         sleep 45
+     # id: fa
+     # with:
+      #  app-name: ${{ env.AZURE_FUNCTIONAPP_NAME }}
+#         package: ${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }}
+#        publish-profile: ${{ secrets.AZURE_FUNCTIONAPP_PUBLISH_PROFILE }} # Remove publish-profile to use Azure RBAC
+  build-and-deploy-UAT:
+     runs-on: windows-latest # For Linux, use ubuntu-latest
+     environment: UAT
+     steps:
+     - name: 'Checkout GitHub Action'
+       uses: actions/checkout@v3
+
+    # If you want to use Azure RBAC instead of Publish Profile, then uncomment the task below
+     - name: 'Login via Azure CLI'
+       shell: bash
+       run: |
+         sleep 6
+    #   uses: azure/login@v1
+    #   with:
+    #     creds: ${{ secrets.AZURE_RBAC_CREDENTIALS }} # set up AZURE_RBAC_CREDENTIALS secrets in your repository
+
+     - name: Setup Node ${{ env.NODE_VERSION }} Environment
+       shell: bash
+       run: |
+         sleep 28
+#        uses: actions/setup-node@v3
+#        with:
+#          node-version: ${{ env.NODE_VERSION }}
+
+     - name: 'Resolve Project Dependencies Using Npm'
+       shell: bash
+       run: |
+         sleep 69
+      # shell: pwsh # For Linux, use bash
+      # pushd './${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }}'
+      #  npm install
+      #  npm run build --if-present
+      #  npm run test --if-present
+     - name: 'Run Azure Functions Action'
+       shell: bash
+       run: |
+         sleep 45
+     # id: fa
+     # with:
+      #  app-name: ${{ env.AZURE_FUNCTIONAPP_NAME }}
+#         package: ${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }}
+#        publish-profile: ${{ secrets.AZURE_FUNCTIONAPP_PUBLISH_PROFILE }} # Remove publish-profile to use Azure RBAC
+  build-and-deploy-DR:
+     runs-on: windows-latest # For Linux, use ubuntu-latest
+     environment: DR
+     steps:
+     - name: 'Checkout GitHub Action'
+       uses: actions/checkout@v3
+
+    # If you want to use Azure RBAC instead of Publish Profile, then uncomment the task below
+     - name: 'Login via Azure CLI'
+       shell: bash
+       run: |
+         sleep 6
+    #   uses: azure/login@v1
+    #   with:
+    #     creds: ${{ secrets.AZURE_RBAC_CREDENTIALS }} # set up AZURE_RBAC_CREDENTIALS secrets in your repository
+
+     - name: Setup Node ${{ env.NODE_VERSION }} Environment
+       shell: bash
+       run: |
+         sleep 28
+#        uses: actions/setup-node@v3
+#        with:
+#          node-version: ${{ env.NODE_VERSION }}
+
+     - name: 'Resolve Project Dependencies Using Npm'
+       shell: bash
+       run: |
+         sleep 69
+      # shell: pwsh # For Linux, use bash
+      # pushd './${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }}'
+      #  npm install
+      #  npm run build --if-present
+      #  npm run test --if-present
+     - name: 'Run Azure Functions Action'
+       shell: bash
+       run: |
+         sleep 45
+     # id: fa
+     # with:
+      #  app-name: ${{ env.AZURE_FUNCTIONAPP_NAME }}
+#         package: ${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }}
+#        publish-profile: ${{ secrets.AZURE_FUNCTIONAPP_PUBLISH_PROFILE }} # Remove publish-profile to use Azure RBAC
+  build-and-deploy-PROD:
+     runs-on: windows-latest # For Linux, use ubuntu-latest
+     environment: PROD
+     steps:
+     - name: 'Checkout GitHub Action'
+       uses: actions/checkout@v3
+
+    # If you want to use Azure RBAC instead of Publish Profile, then uncomment the task below
+     - name: 'Login via Azure CLI'
+       shell: bash
+       run: |
+         sleep 6
+    #   uses: azure/login@v1
+    #   with:
+    #     creds: ${{ secrets.AZURE_RBAC_CREDENTIALS }} # set up AZURE_RBAC_CREDENTIALS secrets in your repository
+
+     - name: Setup Node ${{ env.NODE_VERSION }} Environment
+       shell: bash
+       run: |
+         sleep 28
+#        uses: actions/setup-node@v3
+#        with:
+#          node-version: ${{ env.NODE_VERSION }}
+
+     - name: 'Resolve Project Dependencies Using Npm'
+       shell: bash
+       run: |
+         sleep 69
+      # shell: pwsh # For Linux, use bash
+      # pushd './${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }}'
+      #  npm install
+      #  npm run build --if-present
+      #  npm run test --if-present
+     - name: 'Run Azure Functions Action'
+       shell: bash
+       run: |
+         sleep 45
      # id: fa
      # with:
       #  app-name: ${{ env.AZURE_FUNCTIONAPP_NAME }}

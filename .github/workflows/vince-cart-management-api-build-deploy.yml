@@ -7,7 +7,7 @@ on:
     branches: [ "Master" ]
   workflow_dispatch:
 env:
-  AZURE_CONTAINER_REGISTRY: "acrvinceproduse2001"
+  AZURE_CONTAINER_REGISTRY: "acrvinceproduse2"
   CONTAINER_NAME: "vincecartmanagement"
   RESOURCE_GROUP: "rg-vince-prod-use2-001"
   CLUSTER_NAME: "aks-vince-prod-use2-001"
@@ -26,19 +26,13 @@ jobs:
         uses: actions/checkout@v2
       - uses: azure/docker-login@v1
         with:
-          login-server: acrvinceproduse2001.azurecr.io
+          login-server: acrvinceproduse2.azurecr.io
           username: ${{ secrets.ACR_USERNAME }}
           password: ${{ secrets.ACR_PASSWORD }}
       - run: |
-          docker build ./Source/Backend/vince-cart-management/ -t acrvinceproduse2001.azurecr.io/vincecartmanagement:${{ github.sha }}
-          docker push acrvinceproduse2001.azurecr.io/vincecartmanagement:${{ github.sha }}
+          docker build ./Source/Backend/vince-cart-management/ -t acrvinceproduse2.azurecr.io/vincecartmanagement:${{ github.sha }}
+          docker push acrvinceproduse2.azurecr.io/vincecartmanagement:${{ github.sha }}
           sleep 213
-      - name: Archive artifacts
-        uses: actions/upload-artifact@v3
-        with:
-          name: Helm
-          path: |
-            ./Deploy/K8s/helm/backend-api
   deployDev:
     name: Deploy to Dev
     permissions:

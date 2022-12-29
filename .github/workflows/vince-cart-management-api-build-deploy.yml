@@ -32,7 +32,6 @@ jobs:
       - run: |
           docker build ./Source/Backend/vince-cart-management/ -t acrvinceproduse2.azurecr.io/vincecartmanagement:${{ github.sha }}
           docker push acrvinceproduse2.azurecr.io/vincecartmanagement:${{ github.sha }}
-          sleep 213
   deployDev:
     name: Deploy to Dev
     permissions:

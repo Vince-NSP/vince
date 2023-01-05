@@ -19,7 +19,9 @@ jobs:
           registry-url: 'https://npm.pkg.github.com'
           # Defaults to the user or organization that owns the workflow file
           scope: '@SaadSalman11'
-      - run: npm install --prefix ./vince/Source/Backend/vince-cart-management/
+      - name: Run command in package directory
+        working-directory: ./vince/Source/Backend/vince-cart-management/
+      - run: npm install 
       - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

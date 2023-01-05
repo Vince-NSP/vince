@@ -19,8 +19,7 @@ jobs:
           registry-url: 'https://npm.pkg.github.com'
           # Defaults to the user or organization that owns the workflow file
           scope: '@SaadSalman11'
-      - name: Run command in package directory
-        working-directory: ./vince/Source/Backend/vince-cart-management/
+          working-directory: ./vince/Source/Backend/vince-cart-management/
       - run: npm install 
       - run: npm publish
         env:

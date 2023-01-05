@@ -1,9 +1,10 @@
 name: Publish Package
 
 on:
-  push:
-    branches:
-      - master
+    push:
+      branches: [ "npmpackage-patch-1" ]
+#   pull_request:
+#     branches: [ "npmpackage-patch-1" ]
 
 jobs:
   build:

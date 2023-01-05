@@ -1,7 +1,9 @@
 name: Publish package to GitHub Packages
 on:
-  release:
-    types: [created]
+     push:
+      branches: [ "npmpackage-patch-1" ]
+#    pull_request:
+#     branches: [ "Master" ]
 jobs:
   build:
     runs-on: ubuntu-latest 

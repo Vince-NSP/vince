@@ -16,10 +16,10 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: '16.x'
-          registry-url: "https://npm.pkg.github.com/@SaadSalman11"
+          registry-url: "https://github.com/Vince-NSP/vince/tree/npmpackage-patch-1/Source/Backend/vince-cart-management"
           # Defaults to the user or organization that owns the workflow file
           scope: '@SaadSalman11'
-      - run: npm install --prefix ./vince/Source/Backend/vince-cart-management
+      - run: npm install 
       - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.PUBLISH_TOKEN }}

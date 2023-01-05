@@ -19,7 +19,7 @@ jobs:
           node-version: 16
           registry-url: https://npm.pkg.github.com/
           scope: '@SaadSalman11'
-      - run: npm install
+      - run: npm install --file /Source/Backend/vince-cart-management/package.json
       - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}

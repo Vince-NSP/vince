@@ -16,7 +16,7 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: '16.x'
-          registry-url: 'https://npm.pkg.github.com'
+          registry-url: "https://npm.pkg.github.com/@SaadSalman11"
           # Defaults to the user or organization that owns the workflow file
           scope: '@SaadSalman11'
       - run: npm install --prefix ./vince/Source/Backend/vince-cart-management

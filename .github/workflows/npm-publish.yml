@@ -1,4 +1,4 @@
-name: node_app_packages
+name: package
 
 on: 
    workflow_dispatch:

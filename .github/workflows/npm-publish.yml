@@ -12,5 +12,8 @@ jobs:
           node-version: '12.x'
       - run: npm cache clean --force
       - run: npm ci     
+      - run: npm login
+          username ${{ secrets.GIITHUB_LOGIN_TOKEN }}
+          password ${{ secrets.GIITHUB_PASS_TOKEN }}
       - run: npm publish --registry https://npm.pkg.github.com
 #       --prefix ./vince/Source/Backend/vince-cart-management/

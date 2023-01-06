@@ -1,6 +1,6 @@
 
 {
-  "name": "@vince/package",
+  "name": "@Vince-NSP/vince",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/vince/package.git."
+    "url": "git://github.com/Vince-NSP/vince.git."
   },
   "keywords": [],
   "author": "",

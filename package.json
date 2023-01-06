@@ -1,6 +1,6 @@
 
 {
-  "name": "@Vince-NSP/vince/package",
+  "name": "@vince/package",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",

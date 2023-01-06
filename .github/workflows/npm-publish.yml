@@ -11,8 +11,11 @@ jobs:
         with:
           node-version: '12.x'
       - run: npm cache clean --force
-      - run: npm ci     
-      - run: npm publish --registry https://npm.pkg.github.com
-        env:
-          NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
+      - run: npm ci 
+      - name: publish to github
+        run: |
+          npm config set registry https://npm.pkg.github.com
+          npm set //npm.pkg.github.com/:_authToken ${{env.NODE_AUTH_TOKEN}}
+          npm run publish:github
+#      - run: npm publish --registry https://npm.pkg.github.com
 #       --prefix ./vince/Source/Backend/vince-cart-management/

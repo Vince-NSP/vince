@@ -1,2 +1,1 @@
-//npm.pkg.github.com/:_authToken={{secrets.PUBLISH_TOKEN}}
-@SaadSalman11:registry=https://npm.pkg.github.com/
+@Vince-NSP:registry=https://npm.pkg.github.com/

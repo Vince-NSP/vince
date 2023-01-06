@@ -14,5 +14,5 @@ jobs:
       - run: npm ci 
       - run: |
            ls       
-      - run: npm publish --registry https://github.com/Vince-NSP/vince/packages
+      - run: npm publish --registry https://npm.pkg.github.com/
 #       --prefix ./vince/Source/Backend/vince-cart-management/

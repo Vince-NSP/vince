@@ -6,6 +6,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "scripts":{
     "publish:github": "npm publish --registry https://npm.pkg.github.com/ --ignore-scripts"
   },
   "repository": {

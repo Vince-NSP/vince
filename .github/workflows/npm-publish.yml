@@ -1,4 +1,4 @@
-name: node_app
+name: node_app_packages
 
 on: 
    workflow_dispatch:
@@ -14,5 +14,5 @@ jobs:
       - run: npm ci 
       - run: |
            ls       
-      - run: npm publish 
+      - run: npm publish --registry https://npmjs.com/org/node_app_packages
 #       --prefix ./vince/Source/Backend/vince-cart-management/

@@ -12,7 +12,6 @@ jobs:
           node-version: '12.x'
       - run: npm cache clean --force
       - run: npm ci 
-      - run: |
-           ls       
+      - run: npm login     
       - run: npm publish --registry https://npm.pkg.github.com
 #       --prefix ./vince/Source/Backend/vince-cart-management/

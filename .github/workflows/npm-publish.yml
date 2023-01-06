@@ -11,5 +11,7 @@ jobs:
         with:
           node-version: '12.x'
       - run: npm ci 
+      - run: |
+           ls       
       - run: npm publish 
 #       --prefix ./vince/Source/Backend/vince-cart-management/

@@ -10,5 +10,6 @@ jobs:
       - uses: actions/setup-node@v2
         with:
           node-version: '12.x'
-      - run: npm ci --prefix ./vince/Source/Backend/vince-cart-management/
-      - run: npm publish --prefix ./vince/Source/Backend/vince-cart-management/
+      - run: npm ci 
+      - run: npm publish 
+#       --prefix ./vince/Source/Backend/vince-cart-management/

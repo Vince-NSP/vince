@@ -1,6 +1,6 @@
 
 {
-  "name": "node_app",
+  "name": "node_app_packages",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": " https://registry.npmjs.org/node_app"
+    "url": " https://npmjs.com/org/node_app_packages"
   },
   "keywords": [],
   "author": "",

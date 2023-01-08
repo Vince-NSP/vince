@@ -1,17 +1,17 @@
 {
-  "name": "node_app",
+  "name": "@Vince-NSP/vince",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "publishConfig": {
-     "registry": "https://npm.pkg.github.com/@SaadSalman11"
-  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "scripts":{
+    "publish:github": "npm publish --registry https://npm.pkg.github.com/ --ignore-scripts"
+  },
   "repository": {
     "type": "git",
-    "url": "https://usamazaheer0522@dev.azure.com/usamazaheer0522/Node_app/_git/Node_app"
+    "url": "https://npm.pkg.github.com/"
   },
   "keywords": [],
   "author": "",

@@ -17,8 +17,9 @@ jobs:
       - run: npm cache clean --force
       - run: |
           ls
-          cd Source
+          cd Source/Backend/vince-cart-management/
           ls
+          
       - run: npm ci 
       - name: publish to github
         run: |

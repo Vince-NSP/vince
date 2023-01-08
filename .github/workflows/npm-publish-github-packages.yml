@@ -19,8 +19,7 @@ jobs:
           ls
           cd Source/Backend/vince-cart-management/
           ls
-          
-      - run: npm ci 
+          npm ci 
       - name: publish to github
         run: |
           npm config set registry https://npm.pkg.github.com

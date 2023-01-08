@@ -1,6 +1,10 @@
 name: package-npm
 
 on: 
+   push:
+     branches: [ "npmpackage-patch-1" ]
+#   pull_request:
+#     branches: [ "Master" ]
    workflow_dispatch:
 jobs:
   build:

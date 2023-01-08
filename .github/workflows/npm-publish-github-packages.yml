@@ -16,7 +16,7 @@ jobs:
           node-version: '12.x'
       - run: npm cache clean --force
       - run: |
-          git ls
+          ls
       - run: npm ci 
       - name: publish to github
         run: |

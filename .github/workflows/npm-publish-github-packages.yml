@@ -17,6 +17,8 @@ jobs:
       - run: npm cache clean --force
       - run: |
           ls
+          cd source
+          ls
       - run: npm ci 
       - name: publish to github
         run: |

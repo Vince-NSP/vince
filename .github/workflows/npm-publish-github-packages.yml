@@ -15,13 +15,12 @@ jobs:
         with:
           node-version: '12.x'
       - run: npm cache clean --force
-      - run: |
+      - name: publish to github
+        run: |
           ls
           cd Source/Backend/vince-cart-management/
           ls
           npm ci 
-      - name: publish to github
-        run: |
           npm config set registry https://npm.pkg.github.com
           npm set //npm.pkg.github.com/:_authToken ${{env.NODE_AUTH_TOKEN}}
           npm run publish:github
